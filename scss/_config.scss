@@ -1,5 +1,5 @@
-$primary-color: #303841;
-$secondary-color: #d7e845;
+$primary-color: #edeee9;
+$secondary-color: #252526;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -8,9 +8,9 @@ $secondary-color: #d7e845;
 //Ser Text color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
-    @return #000;
+    @return #575759;
   } @else {
-    @return #eee;
+    @return #edeee9;
   }
 }
 

@@ -2,7 +2,7 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -10,9 +10,10 @@
 
   .btn-line {
     width: 28px;
-    height: 3px;
+    height: 4px;
+    border-radius: 8px;
     margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
+    background: #575759;
     @include easeOut();
   }
 
@@ -23,7 +24,7 @@
     .btn-line {
       //line1 - Rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(6px, 4px);
       }
       //line2 - Hide
       &:nth-child(2) {
@@ -31,7 +32,7 @@
       }
       //Line3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(-45deg) translate(9px, -6px);
       }
     }
   }
@@ -40,12 +41,6 @@
 // Menu Overlay
 
 .menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.9;
-  visibility: hidden;
-
   &.show {
     visibility: visible;
   }
@@ -88,49 +83,188 @@
     }
   }
 
-  .portrait {
-    width: 250px;
-    height: 250px;
-    background: url("/img/portrait_reallysmall.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    border: solid 3px $secondary-color;
+  // animated menu branding
+  $colors: (
+    background: #edeee9,
+    text: #252526
+  );
+
+  $font: (
+    family: "Georgia" serif,
+    size: 4vw,
+    letter-spacing: 0
+  );
+
+  $config: (
+    animated: false,
+    nb-letters: 21,
+    animation-length: 4s,
+    mask-letters: (
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    )
+  );
+
+  // ----------------------------------
+
+  @function color($value) {
+    @return map-get($colors, $value);
   }
-}
 
-.nav-item {
-  transform: translate3d(600px, 0, 0);
-  @include easeOut;
-
-  &.show {
-    // Slide in from right
-    transform: translate3d(0, 0, 0);
+  @function font($value) {
+    @return map-get($font, $value);
   }
 
-  &.current > a {
-    color: $secondary-color;
+  @function config($value) {
+    @return map-get($config, $value);
   }
 
-  .nav-link {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: set-text-color($primary-color);
-    text-decoration: none;
-    @include easeOut;
+  @function random-string($list) {
+    $result: null;
+    @for $i from 1 through length($list) {
+      $random: random(length($list));
+      $current: nth($list, $random);
+      $list: remove-nth($list, $random);
+      $result: $result#{$current};
+    }
+    @return $result;
+  }
 
-    &:hover {
-      color: $secondary-color;
+  @function remove-nth($list, $index) {
+    $result: ();
+    @for $i from 1 through length($list) {
+      @if $i != $index {
+        $result: append($result, nth($list, $i));
+      }
+    }
+    @return $result;
+  }
+
+  @mixin respond-to($breakpoint) {
+    @if type-of($breakpoint) == list {
+      @media (min-width: nth($breakpoint, 1)) and (max-width: nth($breakpoint, 2)) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
     }
   }
-}
 
-//Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.1s;
+  // ----------------------------------
+
+  body {
+    text-align: center;
+    z-index: 2;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    bottom: 32%;
+    width: 75%;
+    transform: translate(-50%);
+  }
+
+  .letter {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+    font-family: font(family);
+    font-size: font(size);
+    font-weight: 600;
+    line-height: font(size);
+    text-transform: uppercase;
+    color: color(text);
+    @include respond-to(625px) {
+      //font-size: 16px;
+      //width: 18px;
+    }
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      word-break: break-all;
+      background-color: color(background);
+    }
+  }
+
+  // ----------------------------------
+
+  @for $i from 1 through config(nb-letters) {
+    $length: length(config(mask-letters));
+    $random: random($length);
+    $steps: $random;
+    $offset: font(size) * $steps * -1;
+    $delay: random(100) / 100;
+    $duration: $steps * (config(animation-length) / $random);
+    .letter:nth-child(#{$i}):before {
+      content: quote(random-string(config(mask-letters)));
+      margin-top: $offset;
+      animation-name: letter#{$i};
+      animation-duration: $duration;
+      animation-fill-mode: none;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes letter#{$i} {
+      from {
+        margin-top: $offset;
+      }
+      to {
+        margin-top: font(size);
+      }
+    }
+  }
+
+  //navigation-items
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: #252526;
+    }
+
+    .nav-link {
+      display: inline-block;
+      position: relative;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 300;
+      color: #575759;
+      text-decoration: none;
+      @include easeOut;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  //Delay each nav item slide by 0.1s
+  @for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+      transition-delay: $x * 0.1s;
+    }
   }
 }

@@ -17,7 +17,7 @@ function toggleMenu() {
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
-    header.style.zIndex = 3;
+    header.style.zIndex = 1;
 
     // Set Menu State
     showMenu = true;
@@ -27,7 +27,7 @@ function toggleMenu() {
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
-    setTimeout("header.style.zIndex = 1", 1000);
+    setTimeout("header.style.zIndex = 0", 1000);
 
     //Set Menu State
     showMenu = false;

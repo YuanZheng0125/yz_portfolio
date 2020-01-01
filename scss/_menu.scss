@@ -91,7 +91,7 @@
 
   $font: (
     family: "Georgia" serif,
-    size: 4vw,
+    size: 2vw,
     letter-spacing: 0
   );
 
@@ -164,15 +164,17 @@
 
   body {
     text-align: center;
-    z-index: 2;
   }
 
   .wrapper {
     position: absolute;
-    top: 35%;
-    left: 55%;
-    bottom: 32%;
-    width: 75%;
+    top: 38%;
+    left: 50%;
+    bottom: 38%;
+    right: 5%;
+    // height: 50%;
+    width: 55%;
+    // overflow: auto;
     transform: translate(-50%);
   }
 
@@ -181,7 +183,7 @@
     vertical-align: middle;
     position: relative;
     overflow: hidden;
-    margin: 1rem;
+    margin: 0vw 0.5vw 2.5vw 1vw;
     font-family: font(family);
     font-size: font(size);
     font-weight: 600;
@@ -247,7 +249,7 @@
     .nav-link {
       display: inline-block;
       position: relative;
-      font-size: 30px;
+      font-size: 20px;
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 300;

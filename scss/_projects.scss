@@ -1,0 +1,21 @@
+.sliderContainer {
+  width: 920px;
+  height: 800px;
+}
+
+.sliderText {
+  float: right;
+  width: 200px;
+  color: #575759;
+  font: 1.2rem "Georgia";
+}
+
+.cursor-prev {
+  cursor: url(../../img/Previous.cur), auto;
+  cursor: url(../../img/PreviousCur.svg) 16 16, auto;
+}
+
+.cursor-next {
+  cursor: url(../../img/Next.cur), auto;
+  cursor: url(../../img/NextCur.svg) 16 16, auto;
+}

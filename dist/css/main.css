@@ -52,15 +52,15 @@
     transform: translate3d(0, 0, 0); }
 
 .menu body {
-  text-align: center;
-  z-index: 2; }
+  text-align: center; }
 
 .menu .wrapper {
   position: absolute;
-  top: 35%;
-  left: 55%;
-  bottom: 32%;
-  width: 75%;
+  top: 38%;
+  left: 50%;
+  bottom: 38%;
+  right: 5%;
+  width: 55%;
   transform: translate(-50%); }
 
 .menu .letter {
@@ -68,11 +68,11 @@
   vertical-align: middle;
   position: relative;
   overflow: hidden;
-  margin: 1rem;
+  margin: 0vw 0.5vw 2.5vw 1vw;
   font-family: "Georgia" serif;
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: 600;
-  line-height: 4vw;
+  line-height: 2vw;
   text-transform: uppercase;
   color: #252526; }
   .menu .letter:before {
@@ -84,8 +84,8 @@
     background-color: #edeee9; }
 
 .menu .letter:nth-child(1):before {
-  content: "7362481590";
-  margin-top: -36vw;
+  content: "4078925316";
+  margin-top: -8vw;
   animation-name: letter1;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -93,13 +93,13 @@
 
 @keyframes letter1 {
   from {
-    margin-top: -36vw; }
+    margin-top: -8vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(2):before {
-  content: "4508379612";
-  margin-top: -28vw;
+  content: "9853147620";
+  margin-top: -16vw;
   animation-name: letter2;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -107,13 +107,13 @@
 
 @keyframes letter2 {
   from {
-    margin-top: -28vw; }
+    margin-top: -16vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(3):before {
-  content: "0937612458";
-  margin-top: -12vw;
+  content: "6904532718";
+  margin-top: -14vw;
   animation-name: letter3;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -121,13 +121,13 @@
 
 @keyframes letter3 {
   from {
-    margin-top: -12vw; }
+    margin-top: -14vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(4):before {
-  content: "4508239176";
-  margin-top: -4vw;
+  content: "2451380796";
+  margin-top: -14vw;
   animation-name: letter4;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -135,13 +135,13 @@
 
 @keyframes letter4 {
   from {
-    margin-top: -4vw; }
+    margin-top: -14vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(5):before {
-  content: "4869751230";
-  margin-top: -12vw;
+  content: "8245701369";
+  margin-top: -10vw;
   animation-name: letter5;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -149,13 +149,13 @@
 
 @keyframes letter5 {
   from {
-    margin-top: -12vw; }
+    margin-top: -10vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(6):before {
-  content: "9476012385";
-  margin-top: -12vw;
+  content: "1607259438";
+  margin-top: -10vw;
   animation-name: letter6;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -163,13 +163,13 @@
 
 @keyframes letter6 {
   from {
-    margin-top: -12vw; }
+    margin-top: -10vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(7):before {
-  content: "2607389514";
-  margin-top: -24vw;
+  content: "9426831705";
+  margin-top: -4vw;
   animation-name: letter7;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -177,13 +177,13 @@
 
 @keyframes letter7 {
   from {
-    margin-top: -24vw; }
+    margin-top: -4vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(8):before {
-  content: "3260591487";
-  margin-top: -12vw;
+  content: "2314950867";
+  margin-top: -4vw;
   animation-name: letter8;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -191,13 +191,13 @@
 
 @keyframes letter8 {
   from {
-    margin-top: -12vw; }
+    margin-top: -4vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(9):before {
-  content: "4271358906";
-  margin-top: -28vw;
+  content: "6175023948";
+  margin-top: -4vw;
   animation-name: letter9;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -205,13 +205,13 @@
 
 @keyframes letter9 {
   from {
-    margin-top: -28vw; }
+    margin-top: -4vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(10):before {
-  content: "1702943865";
-  margin-top: -12vw;
+  content: "6847931025";
+  margin-top: -4vw;
   animation-name: letter10;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -219,13 +219,13 @@
 
 @keyframes letter10 {
   from {
-    margin-top: -12vw; }
+    margin-top: -4vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(11):before {
-  content: "9374805621";
-  margin-top: -32vw;
+  content: "6297435810";
+  margin-top: -18vw;
   animation-name: letter11;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -233,13 +233,13 @@
 
 @keyframes letter11 {
   from {
-    margin-top: -32vw; }
+    margin-top: -18vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(12):before {
-  content: "0391527864";
-  margin-top: -40vw;
+  content: "6213485079";
+  margin-top: -20vw;
   animation-name: letter12;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -247,13 +247,13 @@
 
 @keyframes letter12 {
   from {
-    margin-top: -40vw; }
+    margin-top: -20vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(13):before {
-  content: "9235617840";
-  margin-top: -24vw;
+  content: "9524678130";
+  margin-top: -20vw;
   animation-name: letter13;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -261,13 +261,13 @@
 
 @keyframes letter13 {
   from {
-    margin-top: -24vw; }
+    margin-top: -20vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(14):before {
-  content: "2098316457";
-  margin-top: -36vw;
+  content: "4936705281";
+  margin-top: -2vw;
   animation-name: letter14;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -275,13 +275,13 @@
 
 @keyframes letter14 {
   from {
-    margin-top: -36vw; }
+    margin-top: -2vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(15):before {
-  content: "4258196037";
-  margin-top: -40vw;
+  content: "7693218450";
+  margin-top: -14vw;
   animation-name: letter15;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -289,13 +289,13 @@
 
 @keyframes letter15 {
   from {
-    margin-top: -40vw; }
+    margin-top: -14vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(16):before {
-  content: "9645730812";
-  margin-top: -40vw;
+  content: "9140836572";
+  margin-top: -14vw;
   animation-name: letter16;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -303,13 +303,13 @@
 
 @keyframes letter16 {
   from {
-    margin-top: -40vw; }
+    margin-top: -14vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(17):before {
-  content: "4853921607";
-  margin-top: -20vw;
+  content: "8741203659";
+  margin-top: -2vw;
   animation-name: letter17;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -317,13 +317,13 @@
 
 @keyframes letter17 {
   from {
-    margin-top: -20vw; }
+    margin-top: -2vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(18):before {
-  content: "7341690825";
-  margin-top: -40vw;
+  content: "6023197485";
+  margin-top: -6vw;
   animation-name: letter18;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -331,13 +331,13 @@
 
 @keyframes letter18 {
   from {
-    margin-top: -40vw; }
+    margin-top: -6vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(19):before {
-  content: "5230741968";
-  margin-top: -32vw;
+  content: "4395162087";
+  margin-top: -18vw;
   animation-name: letter19;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -345,13 +345,13 @@
 
 @keyframes letter19 {
   from {
-    margin-top: -32vw; }
+    margin-top: -18vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(20):before {
-  content: "0873621594";
-  margin-top: -16vw;
+  content: "2063475819";
+  margin-top: -20vw;
   animation-name: letter20;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -359,13 +359,13 @@
 
 @keyframes letter20 {
   from {
-    margin-top: -16vw; }
+    margin-top: -20vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .letter:nth-child(21):before {
-  content: "0192574836";
-  margin-top: -20vw;
+  content: "0836954271";
+  margin-top: -18vw;
   animation-name: letter21;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -373,9 +373,9 @@
 
 @keyframes letter21 {
   from {
-    margin-top: -20vw; }
+    margin-top: -18vw; }
   to {
-    margin-top: 4vw; } }
+    margin-top: 2vw; } }
 
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -387,7 +387,7 @@
   .menu .nav-item .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -408,6 +408,24 @@
 
 .menu .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.sliderContainer {
+  width: 920px;
+  height: 800px; }
+
+.sliderText {
+  float: right;
+  width: 200px;
+  color: #575759;
+  font: 1.2rem "Georgia"; }
+
+.cursor-prev {
+  cursor: url(../../img/Previous.cur), auto;
+  cursor: url(../../img/PreviousCur.svg) 16 16, auto; }
+
+.cursor-next {
+  cursor: url(../../img/Next.cur), auto;
+  cursor: url(../../img/NextCur.svg) 16 16, auto; }
 
 * {
   box-sizing: border-box; }
@@ -445,7 +463,7 @@ h3 {
   margin: 0; }
 
 .lg-heading {
-  font-size: 6rem; }
+  font-size: 5rem; }
 
 .sm-heading {
   font-size: 3rem; }
@@ -472,7 +490,6 @@ a {
 
 header {
   position: fixed;
-  z-index: 1;
   width: 100%; }
 
 main {
@@ -482,7 +499,6 @@ main {
   min-height: calc(100vh - 60px); }
   main .icons {
     position: absolute;
-    z-index: 2;
     margin-top: 20vh; }
     main .icons a {
       margin: 0 0.4rem; }
@@ -503,15 +519,10 @@ main {
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
-.bio-image {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: #252526 3px solid; }
-
 .bio {
   grid-area: bio;
-  font-size: 1.5rem; }
+  font-size: 1.2rem;
+  margin-top: 4rem; }
 
 .job-1 {
   grid-area: job1; }
@@ -528,30 +539,49 @@ main {
   border-bottom: #252526 5px solid; }
 
 .projects {
+  position: relative;
+  margin-top: 4rem;
+  padding: 0 4px; }
+
+.category {
+  margin: 0;
+  padding-bottom: 2rem;
+  color: #575759; }
+
+.togglePlus {
+  padding-right: 2rem;
+  text-shadow: 0.5px 0.5px #575759; }
+
+.projectNavList {
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #252526;
-      transition: all 0.5s ease-out; }
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 0.5rem;
+  padding-left: 3.5rem;
+  padding-bottom: 2rem; }
+
+.active {
+  color: #252526; }
+
+.web {
+  width: 65vw;
+  height: 50vh; }
+
+#contact {
+  position: relative; }
 
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 4rem; }
   .boxes div {
-    font-size: 2rem;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 20rem 0.5rem 0rem;
+    margin-bottom: 0.5rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 20rem 0.5rem 0rem;
       background: #252526;
       color: #edeee9; }
       .boxes div:hover span {

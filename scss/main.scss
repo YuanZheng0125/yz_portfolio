@@ -143,6 +143,7 @@ main {
 }
 
 .about-info {
+  position: relative;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
@@ -150,6 +151,7 @@ main {
 }
 
 .bio {
+  position: relative;
   grid-area: bio;
   font-size: 1.2rem;
   margin-top: 4rem;
@@ -172,6 +174,9 @@ main {
 }
 
 // Works
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .projects {
   position: relative;
@@ -179,18 +184,31 @@ main {
   padding: 0 4px;
 }
 
-// .slides {
-//   width: 100%;
-//   // height: 30vw;
+// Categories
 
-//   &:hover {
-//     opacity: 0.5;
-//     border-color: $secondary-color;
-//     @include easeOut;
-//   }
+.acc_trigger {
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.acc_trigger_active {
+  -webkit-transform: translate3d(-16rem, 0, 0);
+}
+
+.acc_container {
+  position: relative;
+}
+
+// .acc_container {
+//   -webkit-transition: all 0.2s ease-in;
+//   -webkit-transform: translate3d(0, 0, 0);
 // }
 
-// Categories
+// .acc_container_active {
+//   -webkit-transform: translate3d(0, -3.5rem, 0);
+// }
+// .acc_container_active {
+//   -webkit-transform: translate3d(0, -3.5rem, 0);
+// }
 
 .category {
   margin: 0;
@@ -257,10 +275,6 @@ main {
     padding: 0.5rem 20rem 0.5rem 0rem;
     margin-bottom: 0.5rem;
     @include easeOut;
-
-    &:hover {
-      // padding: 0.5rem 20rem 0.5rem 0rem;
-    }
   }
 }
 

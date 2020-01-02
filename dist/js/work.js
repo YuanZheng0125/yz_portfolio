@@ -3,7 +3,9 @@
  */
 
 //slide time for the content for each subject
-const slideTime = 600;
+const restoreDelayTime = 800;
+const fadeInOutTime = 600;
+const hideDelayTime = 600;
 
 $(document).ready(function() {
   $(".acc_container").hide();
@@ -13,6 +15,7 @@ $(document).ready(function() {
       .next(".acc_container")
       .find("a");
     const toggleSign = $(this).find(".togglePlus");
+    const contentContainer = $(this).next(".acc_container");
 
     if (
       $(this)
@@ -22,13 +25,20 @@ $(document).ready(function() {
       setTimeout(function() {
         allSubtitles.removeClass("active");
         allSubtitles.eq(0).addClass("active");
-      }, 600);
+      }, restoreDelayTime);
+
+      contentContainer.animate({ opacity: 0, top: "+=50" }, fadeInOutTime);
+      setTimeout(function() {
+        contentContainer.css("display", "none");
+      }, hideDelayTime);
     } else {
       allSubtitles.eq(0).addClass("active");
-      $(this)
-        .next(".acc_container")
+      contentContainer
         .find("iframe")
         .attr("src", allSubtitles.eq(0).attr("href"));
+
+      contentContainer.css("display", "block");
+      contentContainer.animate({ opacity: 1, top: "-=50" }, fadeInOutTime);
     }
 
     toggleSign.text(toggleSign.text() == "+" ? "-" : "+");
@@ -36,9 +46,7 @@ $(document).ready(function() {
       .find(".category")
       .toggleClass("active");
 
-    $(this)
-      .next(".acc_container")
-      .slideToggle(slideTime);
+    $(this).toggleClass("acc_trigger_active");
   });
 
   $(".projectNavList")

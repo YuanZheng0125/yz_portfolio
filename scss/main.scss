@@ -103,7 +103,7 @@ h3 {
 }
 
 a {
-  color: #575759;
+  color: #969699;
   text-decoration: none;
 }
 
@@ -171,16 +171,11 @@ main {
   border-bottom: $secondary-color 5px solid;
 }
 
-// Work/Projects
+// Works
+
 .projects {
   position: relative;
   margin-top: 4rem;
-  // display: grid;
-  // // grid-gap: 0.7rem;
-  // grid-template-columns: 1fr;
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: nowrap;
   padding: 0 4px;
 }
 
@@ -195,74 +190,55 @@ main {
 //   }
 // }
 
+// Categories
+
 .category {
   margin: 0;
   padding-bottom: 2rem;
-  color: #575759;
+  color: #969699;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.category:hover {
+  color: #252526;
 }
 
 .togglePlus {
   padding-right: 2rem;
-  text-shadow: 0.5px 0.5px #575759;
+  text-shadow: 0.5px 0.5px #969699;
 }
+
+// Projects Lists
 
 .projectNavList {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row-gap: 0.5rem;
-  padding-left: 3.5rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem 0 0.5rem 0;
 }
+
+.navList {
+  color: #969699;
+  font-size: 1rem;
+
+  &:hover {
+    color: #252526;
+  }
+}
+
+.web {
+  width: 75vw;
+  height: 60vh;
+  overflow: hidden;
+}
+
+// Activated category
 
 .active {
   color: #252526;
 }
-
-.web {
-  width: 65vw;
-  height: 50vh;
-}
-
-// .item1 {
-//   position: relative;
-//   width: 100%;
-// }
-
-// .image {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-//   margin-bottom: 20px;
-// }
-
-// .overlay1 {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   height: 100%;
-//   width: 100%;
-//   opacity: 0;
-//   transition: 0.5s ease;
-//   background-color: yellow;
-// }
-
-// .item1:hover .overlay1 {
-//   opacity: 0.5;
-// }
-
-// .text1 {
-//   color: #000;
-//   font-size: 20px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   -webkit-transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   transform: translate(-50%, -50%);
-//   text-align: center;
-// }
 
 // Contact Page
 #contact {
@@ -283,39 +259,34 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 20rem 0.5rem 0rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
+      // padding: 0.5rem 20rem 0.5rem 0rem;
     }
   }
 }
 
 //Button Styles
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
-}
+// .btn {
+//   display: block;
+//   padding: 0.5rem 1rem;
+//   border: 0;
+//   margin-bottom: 0.3rem;
+//   &:hover {
+//     background: $secondary-color;
+//     color: set-text-color($secondary-color);
+//   }
+// }
 
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #575759;
-}
+// .btn-dark {
+//   @extend .btn;
+//   background: darken($primary-color, 50);
+//   color: #575759;
+// }
 
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
-}
+// .btn-light {
+//   @extend .btn;
+//   background: lighten($primary-color, 50);
+//   color: #333;
+// }
 
 #main-footer {
   text-align: center;

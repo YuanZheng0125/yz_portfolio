@@ -1,14 +1,44 @@
-.sliderContainer {
-  width: 920px;
-  height: 800px;
+.frame {
+  display: block;
+  margin: 4px;
 }
 
-.sliderText {
-  float: right;
-  width: 200px;
-  color: #575759;
-  font: 1.2rem "Georgia";
+.sliderContainer {
+  max-width: 100%;
+  width: 920px;
+  //   height: 800px;
+  overflow: auto;
 }
+
+// Text
+
+.sliderText {
+  width: 25%;
+  color: #575759;
+  font: 0.8rem "Georgia";
+  float: right;
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+
+.projectName {
+  font-size: 1rem;
+  color: #252526;
+}
+
+// Image Slides
+.slider {
+  position: relative;
+  width: 75%;
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Cursors
 
 .cursor-prev {
   cursor: url(../../img/Previous.cur), auto;
@@ -18,4 +48,25 @@
 .cursor-next {
   cursor: url(../../img/Next.cur), auto;
   cursor: url(../../img/NextCur.svg) 16 16, auto;
+}
+
+// Navigation dots
+
+.sliderNav {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #969699;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+}
+
+.dot:hover {
+  background-color: #252526;
 }

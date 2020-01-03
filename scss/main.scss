@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -187,6 +191,7 @@ body::-webkit-scrollbar {
 // Categories
 
 .acc_trigger {
+  padding-bottom: 1rem;
   -webkit-transition: all 0.4s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -212,9 +217,8 @@ body::-webkit-scrollbar {
 
 .category {
   margin: 0;
-  padding-bottom: 2rem;
   color: #969699;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -224,7 +228,7 @@ body::-webkit-scrollbar {
 }
 
 .togglePlus {
-  padding-right: 2rem;
+  padding-right: 1rem;
   text-shadow: 0.5px 0.5px #969699;
 }
 
@@ -264,42 +268,95 @@ body::-webkit-scrollbar {
 }
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 0 auto;
 
-  div {
-    font-size: 1.2rem;
-    padding: 0.5rem 20rem 0.5rem 0rem;
-    margin-bottom: 0.5rem;
-    @include easeOut;
+  a {
+    text-align: center;
+    margin: 1rem 0;
+    &:hover {
+      color: #252526;
+      @include easeOut();
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid #969699;
+      border-right: 1px solid #969699;
+    }
   }
 }
 
-//Button Styles
-// .btn {
-//   display: block;
-//   padding: 0.5rem 1rem;
-//   border: 0;
-//   margin-bottom: 0.3rem;
-//   &:hover {
-//     background: $secondary-color;
-//     color: set-text-color($secondary-color);
+.top {
+  margin-top: 4rem;
+}
+
+.bottom {
+  margin-top: 3rem;
+}
+
+.sectionTitle {
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #252526;
+  margin-bottom: 1rem;
+}
+
+// Form
+
+fieldset {
+  border: none;
+}
+
+.name input[type="text"],
+.email input[type="email"],
+textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  // border: 1px solid #969699;
+  border: 0;
+  padding: 0.2rem;
+  margin: 0.5rem;
+  color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.name input[type="text"]:focus,
+.email input[type="email"]:focus,
+.message textarea:focus {
+  color: transparent;
+  -moz-box-shadow: 2px 2px 8px #969699;
+  -webkit-box-shadow: 2px 2px 8px #969699;
+  box-shadow: 2px 2px 8px #969699;
+  // border: 1px solid #969699;
+  border: 0;
+  outline: none;
+}
+
+// Animate Hand Icon
+// #animateHand {
+//   -webkit-animation: pointHand 0.5s infinite alternate;
+//   -moz-animation: pointHand 0.5s infinite alternate;
+//   -o-animation: pointHand 0.5s infinite alternate;
+//   animation: pointHand 0.5s infinite alternate;
+// }
+
+// @keyframes pointHand {
+//   from {
+//     transform: translateY(0);
+//     opacity: 1;
 //   }
-// }
-
-// .btn-dark {
-//   @extend .btn;
-//   background: darken($primary-color, 50);
-//   color: #575759;
-// }
-
-// .btn-light {
-//   @extend .btn;
-//   background: lighten($primary-color, 50);
-//   color: #333;
+//   to {
+//     transform: translateY(-0.2em);
+//     opacity: 1;
+//   }
 // }
 
 #main-footer {

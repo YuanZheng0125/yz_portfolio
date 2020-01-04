@@ -27,7 +27,7 @@ $(document).ready(function() {
         allSubtitles.eq(0).addClass("active");
       }, restoreDelayTime);
 
-      contentContainer.animate({ opacity: 0, top: "+=50" }, fadeInOutTime);
+      contentContainer.animate({ opacity: 0, top: "+=60" }, fadeInOutTime);
       setTimeout(function() {
         contentContainer.css("display", "none");
       }, hideDelayTime);
@@ -38,7 +38,7 @@ $(document).ready(function() {
         .attr("src", allSubtitles.eq(0).attr("href"));
 
       contentContainer.css("display", "block");
-      contentContainer.animate({ opacity: 1, top: "-=50" }, fadeInOutTime);
+      contentContainer.animate({ opacity: 1, top: "-=60" }, fadeInOutTime);
     }
 
     toggleSign.text(toggleSign.text() == "+" ? "-" : "+");

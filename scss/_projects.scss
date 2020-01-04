@@ -1,3 +1,7 @@
+body {
+  line-height: 1.5;
+}
+
 .frame {
   display: block;
   margin: 4px;
@@ -8,28 +12,43 @@
   width: 920px;
   //   height: 800px;
   overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: #575759;
 }
 
 // Text
 
 .sliderText {
-  width: 25%;
+  width: 35%;
   color: #575759;
   font: 0.8rem "Georgia";
-  float: right;
-  padding: 4rem 2rem 0 2rem;
+  padding-left: 2rem;
 }
 
 .projectName {
-  //   font-size: 1rem;
   color: #252526;
+}
+
+.viewMore {
+  margin-top: 2rem;
+
+  &:hover a {
+    color: #252526;
+  }
 }
 
 // Image Slides
 .slider {
   position: relative;
-  width: 75%;
-  float: left;
+  width: 65%;
 }
 
 img {

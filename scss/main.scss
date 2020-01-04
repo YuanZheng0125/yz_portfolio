@@ -232,6 +232,12 @@ body::-webkit-scrollbar {
   text-shadow: 0.5px 0.5px #969699;
 }
 
+// Pop up window
+
+.block {
+  height: 500px;
+}
+
 // Projects Lists
 
 .projectNavList {
@@ -239,6 +245,7 @@ body::-webkit-scrollbar {
   grid-template-columns: auto auto auto;
   grid-row-gap: 0.5rem;
   padding: 1.5rem 0 0.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .navList {
@@ -267,6 +274,135 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+.contactInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.top {
+  margin-top: 4rem;
+  position: relative;
+  width: 70%;
+}
+
+.bottom {
+  margin-top: 8rem;
+  width: 30%;
+}
+
+.sectionTitle {
+  color: #252526;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+// Form
+
+form {
+  position: relative;
+  margin: 0;
+  width: 80%;
+  padding: 1rem;
+}
+
+fieldset {
+  border: none;
+  // margin: 0 auto;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+.email,
+.message {
+  margin-top: 1.5rem;
+}
+
+.name input[type="text"],
+.email input[type="email"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  // border: 1px solid #969699;
+  border: 0;
+  padding: 0.5rem;
+  color: black;
+  background-color: transparent;
+  border-bottom: 1px solid #969699;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  // border: 1px solid #969699;
+  border: 0;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  outline: none;
+  resize: none;
+}
+
+.name input[type="text"]:focus,
+.email input[type="email"]:focus,
+.message textarea:focus {
+  color: black;
+  -moz-box-shadow: 10px 10px 16px #969699;
+  -webkit-box-shadow: 10px 10px 16px #969699;
+  box-shadow: 10px 10px 16px #969699;
+  // border: 1px solid #969699;
+  border: 0;
+  outline: none;
+}
+
+.name input,
+.email input,
+.message textarea {
+  width: 100%;
+}
+
+.formLabel {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.submit {
+  margin-top: 2rem;
+  width: 10%;
+  float: right;
+  background-image: url("../../img/Send.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &:hover {
+    cursor: pointer;
+    background-image: url("../../img/Send_active.svg");
+    @include easeOut();
+  }
+}
+
+input[type="submit"] {
+  color: transparent;
+}
+
+//bottom
+
 .boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -286,58 +422,6 @@ body::-webkit-scrollbar {
       border-right: 1px solid #969699;
     }
   }
-}
-
-.top {
-  margin-top: 4rem;
-}
-
-.bottom {
-  margin-top: 3rem;
-}
-
-.sectionTitle {
-  display: block;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: #252526;
-  margin-bottom: 1rem;
-}
-
-// Form
-
-fieldset {
-  border: none;
-}
-
-.name input[type="text"],
-.email input[type="email"],
-textarea {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  // border: 1px solid #969699;
-  border: 0;
-  padding: 0.2rem;
-  margin: 0.5rem;
-  color: transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  outline: none;
-}
-
-.name input[type="text"]:focus,
-.email input[type="email"]:focus,
-.message textarea:focus {
-  color: transparent;
-  -moz-box-shadow: 2px 2px 8px #969699;
-  -webkit-box-shadow: 2px 2px 8px #969699;
-  box-shadow: 2px 2px 8px #969699;
-  // border: 1px solid #969699;
-  border: 0;
-  outline: none;
 }
 
 // Animate Hand Icon

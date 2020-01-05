@@ -1,9 +1,13 @@
 var slideIndex = 0;
 const allImgs = $(".sliderImage").find("img");
 const allImgNavs = $(".sliderNav").find("span");
+const sliderContent = $(".slider");
+const sliderText = $(".sliderText");
 const numImgs = allImgs.length;
 const imgWidth = allImgs.get(0).getBoundingClientRect().width;
 const halfWidth = imgWidth / 2;
+var textFadeInOutTime = 2000;
+var imgFadeInOutTime = 600;
 
 function showImg(picIndex) {
   slideIndex = picIndex;
@@ -28,6 +32,8 @@ function changeCursor(event, element) {
 }
 
 $(document).ready(function() {
+  sliderContent.css("opacity", "0");
+  sliderText.css("opacity", "0");
   allImgs.mousemove(function(event) {
     changeCursor(event, $(this));
   });
@@ -42,7 +48,6 @@ $(document).ready(function() {
     let imgIndex = slideIndex + indexDelta;
     imgIndex = imgIndex < 0 ? numImgs - 1 : imgIndex % numImgs;
     changeCursor(event, allImgs.eq(imgIndex));
-    console.log(imgIndex);
     showImg(imgIndex);
   });
 
@@ -51,5 +56,10 @@ $(document).ready(function() {
     showImg(index);
   });
 
-  showImg(0);
+  setTimeout(function() {
+    showImg(0);
+    sliderContent.animate({ opacity: 1 }, imgFadeInOutTime);
+    sliderText.animate({ opacity: 1 }, textFadeInOutTime);
+  }, 200);
+  // showImg(0);
 });

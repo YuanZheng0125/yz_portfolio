@@ -6,6 +6,7 @@
 const restoreDelayTime = 800;
 const fadeInOutTime = 600;
 const hideDelayTime = 600;
+const iframeReappearTime = 200;
 
 $(document).ready(function() {
   $(".acc_container").hide();
@@ -33,12 +34,15 @@ $(document).ready(function() {
       }, hideDelayTime);
     } else {
       allSubtitles.eq(0).addClass("active");
+
+      contentContainer.css("opacity", "0");
+      contentContainer.css("display", "block");
       contentContainer
         .find("iframe")
         .attr("src", allSubtitles.eq(0).attr("href"));
-
-      contentContainer.css("display", "block");
-      contentContainer.animate({ opacity: 1, top: "-=60" }, fadeInOutTime);
+      setTimeout(function() {
+        contentContainer.animate({ opacity: 1, top: "-=60" }, fadeInOutTime);
+      }, iframeReappearTime);
     }
 
     toggleSign.text(toggleSign.text() == "+" ? "-" : "+");
@@ -52,9 +56,18 @@ $(document).ready(function() {
   $(".projectNavList")
     .find("a")
     .click(function() {
-      $(".projectNavList")
+      $(this)
+        .parent()
         .find("a")
         .removeClass("active");
       $(this).addClass("active");
+
+      const nextFrame = $(this)
+        .parent()
+        .next("iframe");
+      nextFrame.css("opacity", "0");
+      setTimeout(function() {
+        nextFrame.css("opacity", "1");
+      }, iframeReappearTime);
     });
 });

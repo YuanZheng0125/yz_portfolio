@@ -8,18 +8,10 @@
       src="https://kit.fontawesome.com/d735fb03d4.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300|Tajawal:400,500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/fontawesome-free-5.12.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../dist/css/fontawesome-free-5.12.0-web/scss/_variables.scss">
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact me</title>
   </head>
@@ -88,27 +80,58 @@
         Contact Me
       </h1>
       <h2 class="secondary-heading">
-        This is how you can reach me..
+        This is how you can reach me...
       </h2>
-      <div class="boxes">
-        <div>
-          <span class="text-secondary">Email:</span>
-          yz4929@rit.edu
+      <div class="contactInfo">
+        <div class="top">
+          <h3 class="sectionTitle"> <strong> Say Hello! </strong></h3>
+         
+          <div class="contactForm">
+            
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/yuanz.design@gmail.com" method="post">
+              <fieldset id="fs-frm-inputs">
+        
+                <div class="name">
+                  <label for="full-name" class="formLabel">Name </label>
+                  <input type="text" name="name" id="full-name" placeholder="Your name" required="">
+                </div>
+                <div class="email"> 
+                  <label for="email-address" class="formLabel">Email </label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                </div>
+                <div class="message"> 
+                  <label for="message" class="formLabel">Message </label>
+                  <textarea rows="5" name="message" id="message" placeholder="Your message here..." required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </div>
+              </fieldset>
+              <div class="submit">
+                <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
         </div>
-        <div>
-          <span class="text-secondary">Phone:</span>
-          (206)619-0366
-        </div>
-        <div>
-          <span class="text-secondary">Address:</span>
-          20 Fairwood Dr. Rochester, NY 14623
+        <div class="bottom">
+          <h3> Learn me more </h3>
+          <!-- <i id="animateHand" class="fa fa-hand-o-down"></i>  -->
+          <div class="boxes">
+            <a href="https://vimeo.com/user107145398" id="logo">
+              <i class="fab fa-vimeo fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/yuan_zzz0125/" id="logo">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/yuan.zheng.5220" id="logo">
+              <i class="fab fa-facebook fa-2x"></i>
+          </div>       
         </div>
       </div>
     </main>
 
-    <footer id="main-footer">
-      Copyright &copy; 2019
-    </footer>
+    <!-- <footer id="main-footer">
+      Copyright &copy; 2020
+    </footer> -->
 
     <script src="js/main.js"></script>
   </body>

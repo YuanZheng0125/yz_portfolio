@@ -402,14 +402,14 @@ textarea {
   position: relative;
   margin-top: 2rem;
   float: right;
-  background-image: url("../../img/Send.svg");
+  background-image: url("../img/Send.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
   &:hover {
     cursor: pointer;
-    background-image: url("../../img/Send_active.svg");
+    background-image: url("../img/Send_active.svg");
   }
 }
 

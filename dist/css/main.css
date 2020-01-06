@@ -84,8 +84,8 @@
     background-color: #edeee9; }
 
 .menu .letter:nth-child(1):before {
-  content: "6214305879";
-  margin-top: -6vw;
+  content: "6591832047";
+  margin-top: -12vw;
   animation-name: letter1;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -93,13 +93,13 @@
 
 @keyframes letter1 {
   from {
-    margin-top: -6vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(2):before {
-  content: "0519826374";
-  margin-top: -4vw;
+  content: "1297805463";
+  margin-top: -8vw;
   animation-name: letter2;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -107,13 +107,13 @@
 
 @keyframes letter2 {
   from {
-    margin-top: -4vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(3):before {
-  content: "7892065314";
-  margin-top: -20vw;
+  content: "4087259136";
+  margin-top: -12vw;
   animation-name: letter3;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -121,13 +121,13 @@
 
 @keyframes letter3 {
   from {
-    margin-top: -20vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(4):before {
-  content: "4793162580";
-  margin-top: -4vw;
+  content: "7195236480";
+  margin-top: -6vw;
   animation-name: letter4;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -135,13 +135,13 @@
 
 @keyframes letter4 {
   from {
-    margin-top: -4vw; }
+    margin-top: -6vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(5):before {
-  content: "3509617248";
-  margin-top: -12vw;
+  content: "8216039574";
+  margin-top: -16vw;
   animation-name: letter5;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -149,13 +149,13 @@
 
 @keyframes letter5 {
   from {
-    margin-top: -12vw; }
+    margin-top: -16vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(6):before {
-  content: "3241067895";
-  margin-top: -6vw;
+  content: "2609873451";
+  margin-top: -14vw;
   animation-name: letter6;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -163,13 +163,13 @@
 
 @keyframes letter6 {
   from {
-    margin-top: -6vw; }
+    margin-top: -14vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(7):before {
-  content: "9368754102";
-  margin-top: -2vw;
+  content: "4205817963";
+  margin-top: -6vw;
   animation-name: letter7;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -177,12 +177,12 @@
 
 @keyframes letter7 {
   from {
-    margin-top: -2vw; }
+    margin-top: -6vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(8):before {
-  content: "2097438615";
+  content: "2571469308";
   margin-top: -6vw;
   animation-name: letter8;
   animation-duration: 4s;
@@ -196,8 +196,8 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(9):before {
-  content: "7950324168";
-  margin-top: -18vw;
+  content: "2074139568";
+  margin-top: -2vw;
   animation-name: letter9;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -205,13 +205,13 @@
 
 @keyframes letter9 {
   from {
-    margin-top: -18vw; }
+    margin-top: -2vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(10):before {
-  content: "0432697185";
-  margin-top: -6vw;
+  content: "2786531094";
+  margin-top: -20vw;
   animation-name: letter10;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -219,13 +219,13 @@
 
 @keyframes letter10 {
   from {
-    margin-top: -6vw; }
+    margin-top: -20vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(11):before {
-  content: "5643289710";
-  margin-top: -16vw;
+  content: "5687943120";
+  margin-top: -6vw;
   animation-name: letter11;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -233,13 +233,13 @@
 
 @keyframes letter11 {
   from {
-    margin-top: -16vw; }
+    margin-top: -6vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(12):before {
-  content: "9036758412";
-  margin-top: -20vw;
+  content: "3964078521";
+  margin-top: -8vw;
   animation-name: letter12;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -247,13 +247,13 @@
 
 @keyframes letter12 {
   from {
-    margin-top: -20vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(13):before {
-  content: "4923786510";
-  margin-top: -18vw;
+  content: "6840157329";
+  margin-top: -2vw;
   animation-name: letter13;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -261,13 +261,13 @@
 
 @keyframes letter13 {
   from {
-    margin-top: -18vw; }
+    margin-top: -2vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(14):before {
-  content: "8014275693";
-  margin-top: -16vw;
+  content: "0234751968";
+  margin-top: -20vw;
   animation-name: letter14;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -275,13 +275,13 @@
 
 @keyframes letter14 {
   from {
-    margin-top: -16vw; }
+    margin-top: -20vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(15):before {
-  content: "4901583672";
-  margin-top: -4vw;
+  content: "5794613820";
+  margin-top: -12vw;
   animation-name: letter15;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -289,13 +289,13 @@
 
 @keyframes letter15 {
   from {
-    margin-top: -4vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(16):before {
-  content: "7864291503";
-  margin-top: -16vw;
+  content: "8237195064";
+  margin-top: -8vw;
   animation-name: letter16;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -303,13 +303,13 @@
 
 @keyframes letter16 {
   from {
-    margin-top: -16vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(17):before {
-  content: "9680157342";
-  margin-top: -16vw;
+  content: "4260137589";
+  margin-top: -12vw;
   animation-name: letter17;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -317,13 +317,13 @@
 
 @keyframes letter17 {
   from {
-    margin-top: -16vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(18):before {
-  content: "6390851247";
-  margin-top: -12vw;
+  content: "3074521689";
+  margin-top: -4vw;
   animation-name: letter18;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -331,13 +331,13 @@
 
 @keyframes letter18 {
   from {
-    margin-top: -12vw; }
+    margin-top: -4vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(19):before {
-  content: "1095463782";
-  margin-top: -10vw;
+  content: "5034867921";
+  margin-top: -12vw;
   animation-name: letter19;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -345,13 +345,13 @@
 
 @keyframes letter19 {
   from {
-    margin-top: -10vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(20):before {
-  content: "2106987453";
-  margin-top: -8vw;
+  content: "5491607283";
+  margin-top: -12vw;
   animation-name: letter20;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -359,13 +359,13 @@
 
 @keyframes letter20 {
   from {
-    margin-top: -8vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(21):before {
-  content: "0513784629";
-  margin-top: -6vw;
+  content: "6379120584";
+  margin-top: -14vw;
   animation-name: letter21;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -373,7 +373,7 @@
 
 @keyframes letter21 {
   from {
-    margin-top: -6vw; }
+    margin-top: -14vw; }
   to {
     margin-top: 2vw; } }
 
@@ -469,12 +469,12 @@ img {
   border-radius: 2px; }
 
 .cursor-prev {
-  cursor: url(../../img/Prev.png), auto;
-  cursor: url(../../img/Prev.png) 16 16, auto; }
+  cursor: url(../img/Prev.png), auto;
+  cursor: url(../img/Prev.png) 16 16, auto; }
 
 .cursor-next {
-  cursor: url(../../img/Next.png), auto;
-  cursor: url(../../img/Next.png) 16 16, auto; }
+  cursor: url(../img/Next.png), auto;
+  cursor: url(../img/Next.png) 16 16, auto; }
 
 .sliderNav {
   text-align: center; }
@@ -780,13 +780,13 @@ textarea {
   position: relative;
   margin-top: 2rem;
   float: right;
-  background-image: url("../../img/Send.svg");
+  background-image: url("../img/Send.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
   .submit:hover {
     cursor: pointer;
-    background-image: url("../../img/Send_active.svg"); }
+    background-image: url("../img/Send_active.svg"); }
 
 input[type="submit"] {
   color: transparent;

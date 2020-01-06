@@ -6,7 +6,7 @@
 const restoreDelayTime = 800;
 const fadeInOutTime = 600;
 const hideDelayTime = 600;
-const iframeReappearTime = 200;
+const iframeReappearTime = 500;
 
 $(document).ready(function() {
   $(".acc_container").hide();
@@ -51,6 +51,8 @@ $(document).ready(function() {
       .toggleClass("active");
 
     $(this).toggleClass("acc_trigger_active");
+
+    return false;
   });
 
   $(".projectNavList")

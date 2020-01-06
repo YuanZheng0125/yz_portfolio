@@ -4,8 +4,6 @@ const allImgNavs = $(".sliderNav").find("span");
 const sliderContent = $(".slider");
 const sliderText = $(".sliderText");
 const numImgs = allImgs.length;
-const imgWidth = allImgs.get(0).getBoundingClientRect().width;
-const halfWidth = imgWidth / 2;
 var textFadeInOutTime = 2000;
 var imgFadeInOutTime = 600;
 
@@ -21,7 +19,7 @@ function showNextImage(indexDelta) {
   showImg(slideIndex + indexDelta);
 }
 
-function changeCursor(event, element) {
+function changeCursor(event, element, halfWidth) {
   let xPos = event.pageX - element.offset().left;
   element.removeClass("cursor-prev cursor-next");
   if (xPos > halfWidth) {
@@ -35,10 +33,12 @@ $(document).ready(function() {
   sliderContent.css("opacity", "0");
   sliderText.css("opacity", "0");
   allImgs.mousemove(function(event) {
-    changeCursor(event, $(this));
+    let halfWidth = this.getBoundingClientRect().width / 2;
+    changeCursor(event, $(this), halfWidth);
   });
 
   allImgs.click(function(event) {
+    let halfWidth = this.getBoundingClientRect().width / 2;
     $(this).removeClass("cursor-prev cursor-next");
     let xPos = event.pageX - $(this).offset().left;
     let indexDelta = 1;
@@ -47,7 +47,7 @@ $(document).ready(function() {
     }
     let imgIndex = slideIndex + indexDelta;
     imgIndex = imgIndex < 0 ? numImgs - 1 : imgIndex % numImgs;
-    changeCursor(event, allImgs.eq(imgIndex));
+    changeCursor(event, allImgs.eq(imgIndex), halfWidth);
     showImg(imgIndex);
   });
 
@@ -61,5 +61,4 @@ $(document).ready(function() {
     sliderContent.animate({ opacity: 1 }, imgFadeInOutTime);
     sliderText.animate({ opacity: 1 }, textFadeInOutTime);
   }, 200);
-  // showImg(0);
 });

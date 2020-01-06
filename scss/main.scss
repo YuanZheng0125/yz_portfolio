@@ -15,7 +15,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Georgia", serif;
+  font-family: "Assistant", sans-serif;
   line-height: 1.5;
 }
 
@@ -81,25 +81,38 @@ h3 {
   margin: 0;
 }
 
+.main-heading {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
 .lg-heading {
   font-size: 5rem;
+  font-weight: 700;
 }
 
 .sm-heading {
   font-size: 3rem;
+  font-weight: 400;
+  padding-top: 50px;
+  overflow: hidden;
+  margin: 0px auto;
+  width: 50vw;
+  text-align: left;
+  color: #575759;
+  font-family: "Assistant", sans-serif;
 }
 
-.lg-heading,
-.sm-heading {
+.main-heading,
+.lg-heading {
   padding: 40px;
   overflow: hidden;
   margin: 0px auto;
   width: 50vw;
-  font-weight: 600;
   line-height: 0.8;
   text-align: left;
   color: #edeee9;
-  font-family: "Georgia";
+  font-family: "Assistant", sans-serif;
   text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
   animation-name: animateShadow;
   animation-duration: 2s;
@@ -144,6 +157,7 @@ main {
 
 .secondary-heading {
   margin: 2rem 0;
+  font-weight: 400;
 }
 
 .about-info {
@@ -218,7 +232,7 @@ body::-webkit-scrollbar {
 .category {
   margin: 0;
   color: #969699;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -282,20 +296,20 @@ iframe {
 }
 
 .top {
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
   width: 70%;
 }
 
 .bottom {
-  margin-top: 8rem;
+  margin-top: 6rem;
   width: 30%;
 }
 
 .sectionTitle {
   color: #252526;
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -303,18 +317,18 @@ iframe {
 
 form {
   position: relative;
-  margin: 0;
+  margin: 0 1rem;
   width: 80%;
-  padding: 1rem;
+  height: 400px;
+  padding: 2rem 1.5rem;
+  background-color: white;
+  border-radius: 2px;
+  border-bottom: 5px solid black;
 }
 
 fieldset {
   border: none;
   // margin: 0 auto;
-}
-
-textarea {
-  vertical-align: top;
 }
 
 .email,
@@ -341,15 +355,17 @@ textarea {
 }
 
 textarea {
+  vertical-align: top;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   // border: 1px solid #969699;
-  border: 0;
+  border: 1px solid #969699;
   border-radius: 2px;
   padding: 0.5rem;
   margin: 1rem 0 0 0;
   color: black;
+  background-color: transparent;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -379,11 +395,12 @@ textarea {
 .formLabel {
   font-family: inherit;
   font-size: 100%;
+  font-weight: 600;
 }
 
 .submit {
+  position: relative;
   margin-top: 2rem;
-  width: 10%;
   float: right;
   background-image: url("../../img/Send.svg");
   background-repeat: no-repeat;
@@ -393,12 +410,16 @@ textarea {
   &:hover {
     cursor: pointer;
     background-image: url("../../img/Send_active.svg");
-    @include easeOut();
   }
 }
 
 input[type="submit"] {
   color: transparent;
+  opacity: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 //bottom
@@ -411,7 +432,7 @@ input[type="submit"] {
 
   a {
     text-align: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
     &:hover {
       color: #252526;
       @include easeOut();

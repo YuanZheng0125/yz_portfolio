@@ -19,7 +19,7 @@ body {
 }
 
 h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Assistant", sans-serif;
   font-size: 1.2rem;
   color: #575759;
 }
@@ -29,19 +29,37 @@ h3 {
 .sliderText {
   width: 35%;
   color: #575759;
-  font: 0.8rem "Georgia";
-  padding-left: 2rem;
+  font-size: 0.8rem;
+  margin-left: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  border-radius: 2px;
+  border-bottom: 5px solid black;
+  text-align: justify;
 }
 
 .projectName {
   color: #252526;
 }
 
+.projectTag {
+  font-size: 0.8rem;
+  color: #575759;
+  padding-left: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .viewMore {
   margin-top: 2rem;
+  text-align: right;
+
+  a {
+    color: #969699;
+  }
 
   &:hover a {
     color: #252526;
+    font-weight: 600;
   }
 }
 
@@ -54,6 +72,7 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 2px;
 }
 
 // Cursors

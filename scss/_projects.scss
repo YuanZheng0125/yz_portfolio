@@ -35,7 +35,6 @@ h3 {
   background-color: white;
   border-radius: 2px;
   border-bottom: 5px solid black;
-  text-align: justify;
 }
 
 .projectName {
@@ -45,13 +44,12 @@ h3 {
 .projectTag {
   font-size: 0.8rem;
   color: #575759;
-  padding-left: 0.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .viewMore {
   margin-top: 2rem;
-  text-align: right;
+  text-align: left;
 
   a {
     color: #969699;
@@ -59,7 +57,6 @@ h3 {
 
   &:hover a {
     color: #252526;
-    font-weight: 600;
   }
 }
 
@@ -71,8 +68,11 @@ h3 {
 
 img {
   max-width: 100%;
+  max-height: 100%;
   height: auto;
   border-radius: 2px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 // Cursors

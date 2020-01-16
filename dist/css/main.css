@@ -69,7 +69,7 @@
   position: relative;
   overflow: hidden;
   margin: 0vw 0.5vw 2.5vw 1vw;
-  font-family: "Georgia" serif;
+  font-family: "Cormorant Garamond" serif;
   font-size: 2vw;
   font-weight: 700;
   line-height: 2vw;
@@ -84,8 +84,8 @@
     background-color: #edeee9; }
 
 .menu .letter:nth-child(1):before {
-  content: "3957081426";
-  margin-top: -12vw;
+  content: "5093784162";
+  margin-top: -18vw;
   animation-name: letter1;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -93,13 +93,13 @@
 
 @keyframes letter1 {
   from {
-    margin-top: -12vw; }
+    margin-top: -18vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(2):before {
-  content: "0258394617";
-  margin-top: -18vw;
+  content: "5621837049";
+  margin-top: -10vw;
   animation-name: letter2;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -107,13 +107,13 @@
 
 @keyframes letter2 {
   from {
-    margin-top: -18vw; }
+    margin-top: -10vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(3):before {
-  content: "8359260147";
-  margin-top: -2vw;
+  content: "3604591872";
+  margin-top: -12vw;
   animation-name: letter3;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -121,13 +121,13 @@
 
 @keyframes letter3 {
   from {
-    margin-top: -2vw; }
+    margin-top: -12vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(4):before {
-  content: "0182563947";
-  margin-top: -12vw;
+  content: "3209476581";
+  margin-top: -16vw;
   animation-name: letter4;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -135,12 +135,12 @@
 
 @keyframes letter4 {
   from {
-    margin-top: -12vw; }
+    margin-top: -16vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(5):before {
-  content: "9143726805";
+  content: "9018736524";
   margin-top: -6vw;
   animation-name: letter5;
   animation-duration: 4s;
@@ -154,8 +154,8 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(6):before {
-  content: "5429038716";
-  margin-top: -10vw;
+  content: "6879431052";
+  margin-top: -18vw;
   animation-name: letter6;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -163,13 +163,13 @@
 
 @keyframes letter6 {
   from {
-    margin-top: -10vw; }
+    margin-top: -18vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(7):before {
-  content: "2495031678";
-  margin-top: -20vw;
+  content: "3819076245";
+  margin-top: -10vw;
   animation-name: letter7;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -177,13 +177,13 @@
 
 @keyframes letter7 {
   from {
-    margin-top: -20vw; }
+    margin-top: -10vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(8):before {
-  content: "9258604731";
-  margin-top: -6vw;
+  content: "5934760812";
+  margin-top: -18vw;
   animation-name: letter8;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -191,12 +191,12 @@
 
 @keyframes letter8 {
   from {
-    margin-top: -6vw; }
+    margin-top: -18vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(9):before {
-  content: "6735081249";
+  content: "5926308147";
   margin-top: -14vw;
   animation-name: letter9;
   animation-duration: 4s;
@@ -210,7 +210,7 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(10):before {
-  content: "2978461350";
+  content: "9856710324";
   margin-top: -18vw;
   animation-name: letter10;
   animation-duration: 4s;
@@ -224,8 +224,8 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(11):before {
-  content: "6809513472";
-  margin-top: -16vw;
+  content: "2156743809";
+  margin-top: -8vw;
   animation-name: letter11;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -233,12 +233,12 @@
 
 @keyframes letter11 {
   from {
-    margin-top: -16vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(12):before {
-  content: "8097213465";
+  content: "5674103829";
   margin-top: -16vw;
   animation-name: letter12;
   animation-duration: 4s;
@@ -252,8 +252,8 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(13):before {
-  content: "2801694735";
-  margin-top: -20vw;
+  content: "6058394271";
+  margin-top: -8vw;
   animation-name: letter13;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -261,13 +261,13 @@
 
 @keyframes letter13 {
   from {
-    margin-top: -20vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(14):before {
-  content: "5074689123";
-  margin-top: -12vw;
+  content: "3127986450";
+  margin-top: -4vw;
   animation-name: letter14;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -275,13 +275,13 @@
 
 @keyframes letter14 {
   from {
-    margin-top: -12vw; }
+    margin-top: -4vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(15):before {
-  content: "6219085734";
-  margin-top: -8vw;
+  content: "2134809657";
+  margin-top: -14vw;
   animation-name: letter15;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -289,13 +289,13 @@
 
 @keyframes letter15 {
   from {
-    margin-top: -8vw; }
+    margin-top: -14vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(16):before {
-  content: "8693451270";
-  margin-top: -20vw;
+  content: "8132907456";
+  margin-top: -8vw;
   animation-name: letter16;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -303,12 +303,12 @@
 
 @keyframes letter16 {
   from {
-    margin-top: -20vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(17):before {
-  content: "2543186907";
+  content: "7814290536";
   margin-top: -10vw;
   animation-name: letter17;
   animation-duration: 4s;
@@ -322,8 +322,8 @@
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(18):before {
-  content: "0178463295";
-  margin-top: -14vw;
+  content: "3819620547";
+  margin-top: -8vw;
   animation-name: letter18;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -331,13 +331,13 @@
 
 @keyframes letter18 {
   from {
-    margin-top: -14vw; }
+    margin-top: -8vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(19):before {
-  content: "0597812634";
-  margin-top: -12vw;
+  content: "3809615742";
+  margin-top: -2vw;
   animation-name: letter19;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -345,13 +345,13 @@
 
 @keyframes letter19 {
   from {
-    margin-top: -12vw; }
+    margin-top: -2vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(20):before {
-  content: "6597421038";
-  margin-top: -2vw;
+  content: "6574039128";
+  margin-top: -14vw;
   animation-name: letter20;
   animation-duration: 4s;
   animation-fill-mode: none;
@@ -359,12 +359,12 @@
 
 @keyframes letter20 {
   from {
-    margin-top: -2vw; }
+    margin-top: -14vw; }
   to {
     margin-top: 2vw; } }
 
 .menu .letter:nth-child(21):before {
-  content: "3750629184";
+  content: "2917685340";
   margin-top: -12vw;
   animation-name: letter21;
   animation-duration: 4s;
@@ -426,7 +426,7 @@ body {
   align-items: flex-start; }
 
 h3 {
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
   color: #575759; }
 
@@ -506,7 +506,7 @@ body {
   color: #575759;
   height: 100%;
   margin: 0;
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   line-height: 1.5; }
 
 body {
@@ -550,7 +550,7 @@ h3 {
   width: 50vw;
   text-align: left;
   color: #575759;
-  font-family: "Assistant", sans-serif; }
+  font-family: "Cormorant Garamond", serif; }
 
 .main-heading,
 .lg-heading {
@@ -561,7 +561,7 @@ h3 {
   line-height: 0.8;
   text-align: left;
   color: #edeee9;
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   text-shadow: 0px 0px #252526, -1px 1px #252526, -2px 2px #252526, -3px 3px #252526, -4px 4px #252526, -5px 5px #252526, -6px 6px #252526, -7px 7px #252526, -8px 8px #252526, -9px 9px #252526, -10px 10px #252526, -11px 11px #252526, -12px 12px #252526, -13px 13px #252526, -14px 14px #252526, -15px 15px #252526, -16px 16px #252526, -17px 17px #252526, -18px 18px #252526, -19px 19px #252526, -20px 20px #252526, -21px 21px #313134, -22px 22px #313134, -23px 23px #313134, -24px 24px #313134, -25px 25px #313134, -26px 26px #313134, -27px 27px #313134, -28px 28px #313134, -29px 29px #313134, -30px 30px #313134, -31px 31px #313134, -32px 32px #313134, -33px 33px #313134, -34px 34px #313134, -35px 35px #313134, -36px 36px #313134, -37px 37px #313134, -38px 38px #313134, -39px 39px #313134, -40px 40px #313134, -41px 41px #3e3e40, -42px 42px #3e3e40, -43px 43px #3e3e40, -44px 44px #3e3e40, -45px 45px #3e3e40, -46px 46px #3e3e40, -47px 47px #3e3e40, -48px 48px #3e3e40, -49px 49px #3e3e40, -50px 50px #3e3e40, -51px 51px #3e3e40, -52px 52px #3e3e40, -53px 53px #3e3e40, -54px 54px #3e3e40, -55px 55px #3e3e40, -56px 56px #3e3e40, -57px 57px #3e3e40, -58px 58px #3e3e40, -59px 59px #3e3e40, -60px 60px #3e3e40, -61px 61px #4a4a4d, -62px 62px #4a4a4d, -63px 63px #4a4a4d, -64px 64px #4a4a4d, -65px 65px #4a4a4d, -66px 66px #4a4a4d, -67px 67px #4a4a4d, -68px 68px #4a4a4d, -69px 69px #4a4a4d, -70px 70px #4a4a4d, -71px 71px #4a4a4d, -72px 72px #4a4a4d, -73px 73px #4a4a4d, -74px 74px #4a4a4d, -75px 75px #4a4a4d, -76px 76px #4a4a4d, -77px 77px #4a4a4d, -78px 78px #4a4a4d, -79px 79px #4a4a4d, -80px 80px #4a4a4d, -81px 81px #575759, -82px 82px #575759, -83px 83px #575759, -84px 84px #575759, -85px 85px #575759, -86px 86px #575759, -87px 87px #575759, -88px 88px #575759, -89px 89px #575759, -90px 90px #575759, -91px 91px #575759, -92px 92px #575759, -93px 93px #575759, -94px 94px #575759, -95px 95px #575759, -96px 96px #575759, -97px 97px #575759, -98px 98px #575759, -99px 99px #575759, -100px 100px #575759;
   animation-name: animateShadow;
   animation-duration: 2s;
@@ -769,7 +769,8 @@ textarea {
 .name input,
 .email input,
 .message textarea {
-  width: 100%; }
+  width: 100%;
+  font-family: "Cormorant Garamond", serif; }
 
 .formLabel {
   font-family: inherit;
@@ -828,7 +829,7 @@ input[type="submit"] {
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
+    main .main-heading {
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,

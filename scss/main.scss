@@ -15,7 +15,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   line-height: 1.5;
 }
 
@@ -100,7 +100,7 @@ h3 {
   width: 50vw;
   text-align: left;
   color: #575759;
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .main-heading,
@@ -112,7 +112,7 @@ h3 {
   line-height: 0.8;
   text-align: left;
   color: #edeee9;
-  font-family: "Assistant", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   text-shadow: makelongshadow($color, $color2, $color3, $color4, $color5);
   animation-name: animateShadow;
   animation-duration: 2s;
@@ -390,6 +390,7 @@ textarea {
 .email input,
 .message textarea {
   width: 100%;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .formLabel {
